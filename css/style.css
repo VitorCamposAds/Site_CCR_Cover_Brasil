@@ -981,7 +981,7 @@ transition: all 0.3s ease-in;
  
 .header-top {
     position: relative; /* Para permitir que o overlay fique sobre o fundo */
-    background: url(../images/foto6_ccr.jpg);
+    background: url(../images/foto6_ccr_redimensionada.jpg);
     min-height: 980px; /* Altura mínima */
     padding: 20px 0; /* Espaço acima e abaixo */
 }
