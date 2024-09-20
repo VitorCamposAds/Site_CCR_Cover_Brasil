@@ -841,8 +841,8 @@
      font-size: 12px;
 }
 .menu-area-main li.active a {
-     color: #fff;
-     background: #0ed1f0;
+     color: #494141;
+     background: #e1e6e7;
      border-radius: 17px;
      }
 
@@ -864,14 +864,14 @@
      font-size: 16px;
      display: block;
      font-weight: 500;
-     color: #fff;
+     color: #131010;
      text-transform: uppercase;
      transition: all 0.3s ease-in;
 }
 
  .main-menu ul>li a:hover {
 color: #fff;
-background: #0ed1f0;
+background: #dfe5e6;
 border-radius: 17px;
 transition: all 0.3s ease-in;
  }
@@ -980,20 +980,21 @@ transition: all 0.3s ease-in;
 }
  
 .header-top {
+    position: relative; /* Para permitir que o overlay fique sobre o fundo */
     background: url(../images/foto6_ccr.jpg);
-    background-size: cover; /* Mantém a imagem de fundo */
-    background-repeat: no-repeat;
     min-height: 980px; /* Altura mínima */
     padding: 20px 0; /* Espaço acima e abaixo */
 }
 
-.header-top {
-    background: url(../images/foto6_ccr.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 980px;
-    padding: 20px 0;
+.overlay {
+    position: absolute; /* Faz o overlay cobrir toda a área do header */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.6); /* Cor branca com 60% de opacidade */
 }
+
 
 .header {
     display: flex; /* Usar flexbox */
@@ -1002,63 +1003,71 @@ transition: all 0.3s ease-in;
     padding: 0 20px; /* Adiciona espaço nas laterais */
     width: 100%; /* Garante que a header ocupe toda a largura */
 }
-
 .logo_section {
     margin-right: auto; /* Empurra o menu para a direita */
 }
  .banner_Client {
      position: relative;
 }
- .text-bg {text-align: center;}
-  .text-bg span {
-     font-size: 70px;
-line-height: 60px;
-color: #ffe818;
-text-transform: uppercase;
-  }
- .text-bg h1 {
-    color: #FFFFFF;
-padding-top: 20px;
-font-size: 70px;
-line-height: 65px;
-padding-bottom: 40px;
-font-weight: bold;
+.text-bg {
+    text-align: center;
 }
- .text-bg p {
+
+.text-bg span {
+    font-size: 80px;
+    line-height: 80px;
+    color: #000205; /* Azul vibrante */
+    text-transform: uppercase;
+}
+
+.text-bg h1 {
+    color: #000000; /* Branco */
+    padding-top: 20px;
+    font-size: 50px;
+    line-height: 85px;
+    padding-bottom: 40px;
+    font-weight: normal
+}
+
+.text-bg p {
+    font-size: 17px;
+    display: block;
+    color: #000000; /* Preto */
+    line-height: 30px;
+    padding-bottom: 50px;
+    font-weight: 400;
+}
+
+.text-bg a {
     font-size: 16px;
-display: block;
-color: #fff;
-line-height: 30px;
-padding-bottom: 50px;
-font-weight: 400;
+    background-color: #FFFFFF; /* Fundo branco */
+    color: #000000; /* Texto preto */
+    padding: 12px 0px;
+    max-width: 253px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 30px;
+    margin-right: 10px;
+    transition: ease all 0.5s;
 }
- .text-bg a {
-     font-size: 16px;
-background-color: #fff;
-color: #000;
-padding: 10px 0px;
-max-width: 253px;
-width: 100%;
-display: inline-block;
-text-align: center;
-border-radius: 30px;
-margin-right: 10px;
-transition: ease all 0.5s;
- }
- .text-bg a:hover {
-     background-color: #0ed1f0;
-    color: #fff;
+
+.text-bg a:hover {
+    background-color: #0A74DA; /* Azul mais escuro */
+    color: #FFFFFF; /* Texto branco */
     transition: ease all 0.5s;          
 }
- .text {
-     position: inherit;
-     text-align: left;
-     background: #0fbbad;
-     width: 100%;
-     bottom: auto;
-     padding: 0;
-     margin-top: 90px 
+
+.text {
+    position: inherit;
+    text-align: left;
+    background: #0fbbad; /* Teal */
+    width: 100%;
+    bottom: auto;
+    padding: 0;
+    margin-top: 90px; 
 }
+
  .img_bg {
      text-align: center;
      margin: 0 auto;
@@ -1103,7 +1112,7 @@ transition: ease all 0.5s;
 
 .carousel-control-prev i {
  background: #f9f9f9;
-    color: #03daee;
+    color: #000000;
     width: 70px;
     height: 70px;
      font-size: 20px;
@@ -1115,7 +1124,7 @@ transition: ease all 0.5s;
 }
 .carousel-control-next i {
     background: #f9f9f9;
-    color: #03daee;
+    color: #000000;
     width: 70px;
     font-size: 20px;
     height: 70px;
