@@ -447,7 +447,7 @@
      text-decoration: none;
 }
  .top-menu-left li a:hover {
-     color: #38c8a8;
+     color: #869692;
 }
  .right-dropdown-language {
      float: right;
@@ -833,7 +833,7 @@
      right: -8px;
      top: -8px;
      line-height: initial;
-     background: #38c8a8;
+     background: #646867;
      padding: 3px;
      border-radius: 50%;
      width: 17px;
@@ -992,7 +992,7 @@ transition: all 0.3s ease-in;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(192, 189, 189, 0.918); /* Cor branca com 60% de opacidade */
+    background: rgba(156, 154, 154, 0.918); /* Cor branca com 60% de opacidade */
 }
 
 
@@ -1291,20 +1291,20 @@ margin-top: 90px;
      color: #181716;
     
 }
- .Gallery_text a {
+.Gallery_text a {
     font-size: 16px;
-border: #000 solid 1px;
-background-color: #000;
-color: #fff;
-padding: 9px 0px;
-max-width: 171px;
-width: 100%;
-display: inline-block;
-text-align: center;
-border-radius: 30px;
-float: right;
-margin-top: 53px;
+    border: #000 solid 1px;
+    background-color: #000;
+    color: #fff;
+    padding: 9px 0px;
+    max-width: 171px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 30px;
+    margin: 20px auto; /* Centraliza o botão */
 }
+
 
 .margi_bott {margin-bottom: 20px;}
 .Gallery_img {
