@@ -980,7 +980,7 @@ transition: all 0.3s ease-in;
 }
  
 .header-top {
-    background: url(../images/ccr.jpg);
+    background: url(../images/foto6_ccr.jpg);
     background-size: cover; /* Mantém a imagem de fundo */
     background-repeat: no-repeat;
     min-height: 980px; /* Altura mínima */
@@ -988,7 +988,7 @@ transition: all 0.3s ease-in;
 }
 
 .header-top {
-    background: url(../images/ccr.jpg);
+    background: url(../images/foto6_ccr.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 980px;
