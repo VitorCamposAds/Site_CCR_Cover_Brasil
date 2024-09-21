@@ -1584,13 +1584,29 @@ font-weight: 500;
 padding-bottom: 20px;
 }
  
- .footer .address h3 {
-     color: #fff;
-font-size: 30px;
-line-height: 35px;
-font-weight: 500;
-padding-bottom: 20px;
+.footer .address h3 {
+    color: #fff;
+    font-size: 30px; /* Tamanho padrão */
+    line-height: 35px;
+    font-weight: 500;
+    padding-bottom: 20px;
 }
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .footer .address h3 {
+        font-size: 24px; /* Ajusta para telas menores */
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer .address h3 {
+        font-size: 20px; /* Tamanho ainda menor para dispositivos muito pequenos */
+        line-height: 26px;
+    }
+}
+
  .location_section {
      background-color: #fff;
      margin-bottom: 40px;
