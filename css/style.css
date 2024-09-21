@@ -1167,72 +1167,97 @@ transition: all 0.3s ease-in;
 
 /** about section **/
 .about {
-background:url(../images/about_bg.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-padding: 110px 0;
-margin-top: 90px;
-     
+    background: url(../images/about_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 110px 0;
+    margin-top: 90px;
 }
 
 .display_boxflex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
-     display: flex;
-     align-items: center;
-     flex-wrap: wrap;
+.about .about-box {
+    text-align: center; /* Centraliza o texto */
 }
- .about .about-box {
-    text-align: left;
-    
-}
+
 .about .about-box h2 {
-    padding: 1;
     color: #020d0f;
-    line-height: 70px;
-    font-size: 70px;
+    line-height: 1.2; /* Melhor para responsividade */
+    font-size: 4vw; /* Responsivo */
 }
 
 .about .about-box p {
-font-size: 17px;
-line-height: 28px;
-color: #000;
-padding: 0; /* Sem padding extra */
-margin-bottom: 10px;
-text-align: justify;
+    font-size: 17px;
+    line-height: 28px;
+    color: #000;
+    margin-bottom: 10px;
+    text-align: justify;
 }
 
 .about .about-box p:last-of-type {
-margin-bottom: 20px; /* Adicione espaço abaixo do último parágrafo */
+    margin-bottom: 20px; /* Espaço abaixo do último parágrafo */
 }
 
 .about .about-box a {
-font-size: 16px;
-border: #000 solid 1px;
-background-color: #000;
-color: #fff;
-padding: 9px 0;
-max-width: 171px;
-width: 100%;
-display: inline-block;
-text-align: center;
-border-radius: 30px;
-margin-top: 20px; /* Espaço acima do botão */
-margin-bottom: 20px; /* Espaço abaixo do botão */
-}
-
-.about .about-box a:hover{ 
-background-color: #444546;
-border: #323435 solid 1px;
-color: #fff;
-
- }
- .about .about-box figure {
-     margin: 20px;
-}
- .about .about-box figure img {
+    font-size: 16px;
+    border: #000 solid 1px;
+    background-color: #000;
+    color: #fff;
+    padding: 9px 0;
+    max-width: 171px;
     width: 100%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 20px; /* Espaço acima do botão */
+    margin-bottom: 20px; /* Espaço abaixo do botão */
 }
+
+.about .about-box a:hover { 
+    background-color: #444546;
+    border: #323435 solid 1px;
+    color: #fff;
+}
+
+.about .about-box figure {
+    margin: 20px;
+}
+
+.about .about-box figure img {
+    max-width: 100%; /* Evitar distorção */
+    height: auto; /* Manter a proporção */
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .about .about-box h2 {
+        font-size: 6vw; /* Ajuste para telas menores */
+    }
+
+    .about .about-box p {
+        font-size: 14px; /* Tamanho da fonte reduzido */
+    }
+
+    .about .about-box a {
+        font-size: 14px; /* Ajuste do tamanho do botão */
+    }
+}
+
+@media (max-width: 480px) {
+    .about .about-box h2 {
+        font-size: 8vw; /* Tamanho ainda menor para dispositivos muito pequenos */
+    }
+
+    .about .about-box p {
+        font-size: 12px; /* Tamanho da fonte ainda menor */
+    }
+}
+
 /** end about section **/
 
 /** upcoming section **/
