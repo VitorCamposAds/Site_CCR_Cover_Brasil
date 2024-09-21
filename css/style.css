@@ -242,11 +242,23 @@
      border-radius: 0;
      margin-right: 30px;
 }
- a.readmore_bt {
-     color: #fff;
-     font-weight: 300;
-     text-decoration: underline !important;
+a.readmore_bt {
+    color: #FFFFFF; /* Cor do texto em branco */
+    font-weight: 300;
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 16px; /* Tamanho da fonte */
+    font-family: 'Poppins', sans-serif; /* Fonte Poppins */
+    border: #000 solid 1px; /* Se quiser borda */
+    background-color: #000; /* Cor de fundo se precisar */
+    padding: 9px 0; /* Padding conforme solicitado */
+    max-width: 171px; /* Largura máxima */
+    width: 100%; /* Largura total */
+    display: inline-block; /* Permite que o botão seja um bloco inline */
+    border-radius: 30px; /* Bordas arredondadas */
+    margin: 30px 0 0; /* Margem conforme solicitado */
+    text-align: center; /* Centraliza o texto */
 }
+
  .main_bt:hover, .main_bt:focus {
      background: #ad2101;
      border: solid #ad2101 5px;
