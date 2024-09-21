@@ -1261,6 +1261,7 @@ color: #fff;
      color: #181716;
      padding-right: 20px;
      text-align: justify;
+     margin-bottom: 10px
 }
  .box_text a {
     font-size: 16px;
@@ -1387,58 +1388,78 @@ ul.icon_hu li {padding: 10px 3px; display: inline-block;}
      font-size: 70px;
 }
 
- .contact {
-     padding-top: 90px;
+.contact {
+    padding-top: 90px;
 }
 
- .contact_bg .titlepage {
-     text-align: center;
-     padding-bottom: 30px;
+.contact_bg .titlepage {
+    text-align: center;
+    padding-bottom: 30px;
 }
- .contact_bg .titlepage h2 {
-     padding: 0px;
-     color: #fff;
+
+.contact_bg .titlepage h2 {
+    padding: 0px;
+    color: #fff;
 }
+
 .contact_bg {
     max-width: 677px;
     margin: 0 auto;
     text-align: center;
-     padding: 40px 0px 50px 0px;
+    padding: 40px 0px 50px 0px;
 }
- .contact_bg .contactus {
-     border: #f8f8f8 solid 1px;
-     padding: 12px 19px;
-     margin-bottom: 15px;
-     border-radius: inherit;
-     color: #000;
-     width: 100%;
-     height: 44px;
+
+.contacts {
+    display: flex; /* Alinha os contatos em linha */
+    justify-content: space-between; /* Distribui o espaço entre os contatos */
+    padding: 10px 0; /* Ajuste o padding conforme necessário */
 }
+
+.contact-left {
+    flex: 1; /* Faz com que a coluna esquerda ocupe espaço */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.contact-right {
+    margin-left: -20px; /* Ajusta a posição para a esquerda */
+}
+
+.contact_bg .contactus {
+    border: #f8f8f8 solid 1px;
+    padding: 12px 19px;
+    margin-bottom: 15px;
+    border-radius: inherit;
+    color: #000;
+    width: 100%;
+    height: 44px;
+}
+
 .contact_bg .textarea {
-     margin-bottom: 15px;
-     padding: 15px 19px;
-     color: #000 !important;
-     width: 100%;
-     border: #fffefe solid 1px;
-     border-radius: inherit;
+    margin-bottom: 15px;
+    padding: 15px 19px;
+    color: #000 !important;
+    width: 100%;
+    border: #fffefe solid 1px;
+    border-radius: inherit;
 }
+
 .contact_bg .send {
-     font-size: 16px;
-     background-color: #fff;
-     color: #000;
-     max-width: 171px;
-     width: 100%;
-     padding: 11px 0px;
-     transition: all 0.3s ease-in;
-     border-radius: 30px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+    max-width: 171px;
+    width: 100%;
+    padding: 11px 0px;
+    transition: all 0.3s ease-in;
+    border-radius: 30px;
 }
+
 .contact_bg .send:hover {
-     background-color: #545d5f;
-
-color: #fff;
-transition: all 0.3s ease-in;
-
+    background-color: #545d5f;
+    color: #fff; /* Corrigido aqui */
+    transition: all 0.3s ease-in; /* Já estava correto */
 }
+
 /** end contact section **/
 
 
