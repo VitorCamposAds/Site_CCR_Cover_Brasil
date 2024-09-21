@@ -1398,7 +1398,7 @@ ul.icon_hu li {padding: 10px 3px; display: inline-block;}
 }
 
 .contact_bg .titlepage h2 {
-    padding: 0px;
+    padding: 0;
     color: #fff;
 }
 
@@ -1406,22 +1406,62 @@ ul.icon_hu li {padding: 10px 3px; display: inline-block;}
     max-width: 677px;
     margin: 0 auto;
     text-align: center;
-    padding: 40px 0px 50px 0px;
+    padding: 40px 0 50px 0;
 }
 
 .contacts {
-    display: flex; /* Alinha os contatos em linha */
+    display: flex;
     justify-content: space-between; /* Distribui o espaço entre os contatos */
-    padding: 10px 0; /* Ajuste o padding conforme necessário */
+    padding: 10px 0;
+    flex-wrap: wrap; /* Permite que os itens quebrem em linha em telas menores */
+}
+
+.contact-left,
+.contact-right {
+    flex: 1; /* Ambos ocupam o mesmo espaço */
+    min-width: 200px; /* Tamanho mínimo para evitar sobreposição */
+    padding: 0 10px; /* Padding para espaçamento */
 }
 
 .contact-left {
-    flex: 1; /* Faz com que a coluna esquerda ocupe espaço */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Para justificar o texto à esquerda */
+.contact-left strong,
+.contact-left a {
+    display: block; /* Faz cada linha ocupar toda a largura */
     text-align: left; /* Alinha o texto à esquerda */
 }
 
 .contact-right {
-    margin-left: -20px; /* Ajusta a posição para a esquerda */
+    text-align: right; /* Alinha o texto do Ruy à direita */
+}
+
+/* Para justificar o texto à direita */
+.contact-right strong,
+.contact-right a {
+    display: block; /* Faz cada linha ocupar toda a largura */
+    text-align: right; /* Alinha o texto à direita */
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 600px) {
+    .contacts {
+        flex-direction: column; /* Muda para coluna em telas menores */
+        align-items: flex-start; /* Alinha à esquerda */
+    }
+    
+    .contact-left,
+    .contact-right {
+        margin-bottom: 10px; /* Espaçamento entre os contatos */
+        width: 100%; /* Faz os contatos ocuparem toda a largura */
+        text-align: left; /* Mantém o texto à esquerda para ambos */
+    }
+
+    .contact-right {
+        text-align: left; /* Para telas menores, mantém à esquerda */
+    }
 }
 
 .contact_bg .contactus {
@@ -1449,19 +1489,18 @@ ul.icon_hu li {padding: 10px 3px; display: inline-block;}
     color: #000;
     max-width: 171px;
     width: 100%;
-    padding: 11px 0px;
+    padding: 11px 0;
     transition: all 0.3s ease-in;
     border-radius: 30px;
 }
 
 .contact_bg .send:hover {
     background-color: #545d5f;
-    color: #fff; /* Corrigido aqui */
-    transition: all 0.3s ease-in; /* Já estava correto */
+    color: #fff;
+    transition: all 0.3s ease-in;
 }
 
 /** end contact section **/
-
 
 /** footer **/
  .footer {
