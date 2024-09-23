@@ -66,6 +66,7 @@
                                         <li> <a href="/">Home</a> </li>        
                                         <li> <a href="#about">Sobre</a></li>
                                         <li> <a href="#gallery">Galeria</a></li>
+                                        <li> <a href="#videos">Videos</a></li>
                                         <li> <a href="#contact">Contato</a></li>    
                                     </ul>
                                 </nav>       
@@ -162,11 +163,16 @@
               <img src="{{ url_for('static', filename='images/ccr_original.jpg') }}" alt="ccr_original.jpg" />
             </figure>
           </div>
+          <div class="about-box">
+            <figure>
+              <img src="{{ url_for('static', filename='images/ccr_veja.jpg') }}" alt="ccr_veja.jpg" />
+            </figure>
+          </div>
         </div>
       </div>
-      <div class="text-center" style="margin-top: 40px;">
-        <a href="Javascript:void(0)" class="readmore_bt">Saiba Mais</a>
-      </div>
+      <div class="Gallery_text text-center">
+        <a href="https://tribunadolitoral.com/a-mais-conhecida-banda-cover-da-america-latina-no-litoral-paranaense-creedence-brasil/" class="readmore_bt">Saiba Mais</a>
+    </div>
     </div>
   </div>
   
@@ -191,89 +197,128 @@
           </div>
         </div>
       </div>
-      <div class="text-center" style="margin-top: 40px;">
-        <a href="https://www.antena1.com.br/artistas/creedence-clearwater-revival" class="readmore_bt">Saiba Mais</a>
+      <div class="Gallery_text text-center">
+        <a href="https://www.youtube.com/watch?v=L0gK80UU4I0" class="readmore_bt">Saiba Mais</a>
       </div>
     </div>
   </div>
+<!-- galeria -->
+<div id="gallery" class="Gallery">
+  <div class="container"> 
+    <div class="row display_boxflex">
+      <div class="col-xl-12">
+        <div class="titlepage">
+          <h2 style="color: black;">Galeria</h2>
+        </div>
+      </div>
+      <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 mx-auto">
+        <div class="row justify-content-center">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margi_bott text-center">
+            <div class="Gallery_img">
+              <figure>
+                <img src="{{ url_for('static', filename='images/foto3_ccr.jpg') }}" alt="#" />
+              </figure>
+            </div>
+            <div class="hover_box">
+              <ul class="icon_hu">
+                <h3>Creedence Cover Brasil</h3>
+                <li><a href="#"><img src="{{ url_for('static', filename='icon/h.png') }}" alt="#" /></a></li>
+                <li><a href="#"><img src="{{ url_for('static', filename='icon/h.png') }}" alt="#" /></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margi_bott text-center">
+            <div class="Gallery_img">
+              <figure>
+                <img src="{{ url_for('static', filename='images/foto1_ccr.png') }}" alt="#" />
+              </figure>
+            </div>
+            <div class="hover_box">
+              <ul class="icon_hu">
+                <h3>Creedence Cover Brasil</h3>
+                <li><a href="#"><img src="{{ url_for('static', filename='icon/h.png') }}" alt="#" /></a></li>
+                <li><a href="#"><img src="{{ url_for('static', filename='icon/h.png') }}" alt="#" /></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margi_bott1 text-center">
+            <div class="Gallery_img">
+              <figure>
+                <img src="{{ url_for('static', filename='images/ccr.jpg') }}" alt="#" />
+              </figure>
+            </div>
+            <div class="hover_box">
+              <ul class="icon_hu">
+                <h3>Creedence Cover Brasil</h3>
+                <li><a href="#"><img src="{{ url_for('static', filename='icon/h.png') }}" alt="#" /></a></li>
+                <li><a href="#"><img src="{{ url_for('static', filename='icon/h.png') }}" alt="#" /></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 text-center">
+            <div class="Gallery_img">
+              <figure>
+                <img src="{{ url_for('static', filename='images/foto7_ccr.jpg') }}" alt="#" />
+              </figure>
+            </div>
+            <div class="hover_box">
+              <ul class="icon_hu">
+                <h3>Creedence Cover Brasil</h3>
+                <li><a href="#"><img src="{{ url_for('static', filename='icon/h.png') }}" alt="#" /></a></li>
+                <li><a href="#"><img src="{{ url_for('static', filename='icon/h.png') }}" alt="#" /></a></li>              
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end Gallery -->
 
-  <div id="gallery" class="Gallery">
-    <div class="container"> 
+<!-- seção videos -->
+<div id="videos" class="gallery_video">
+  <div class="container"> 
       <div class="row display_boxflex">
         <div class="col-xl-12">
           <div class="titlepage">
-            <h2 style="color: black;">Galeria</h2>
+              <h2 class="gallery_video-title">VIDEOS</h2>
           </div>
-        </div>
+        </div>      
         <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 mx-auto">
           <div class="row justify-content-center">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margi_bott text-center">
-              <div class="Gallery_img">
-                <figure>
-                  <img src="{{ url_for('static', filename='images/foto3_ccr.jpg') }}" alt="#" />
-                </figure>
+              <div class="col-xl-12 text-center margi_bott">
+                  <div class="Gallery_img">
+                      <h3>Vozes e Estórias: Creedence Cover Brasil</h3> <!-- Título adicionado -->
+                      <figure>
+                          <video controls>
+                              <source src="{{ url_for('static', filename='video/video_1.mp4') }}" type="video/mp4">
+                              Seu navegador não suporta a tag de vídeo.
+                          </video>
+                      </figure>
+                  </div>
               </div>
-              <div class="hover_box">
-                <ul class="icon_hu">
-                  <h3>Creedence Cover Brasil</h3>
-                  <li><a href="#"><img src="{{ url_for('static', filename='icon/h.png') }}" alt="#" /></a></li>
-                  <li><a href="#"><img src="{{ url_for('static', filename='icon/h.png') }}" alt="#" /></a></li>
-                </ul>
+              <div class="col-xl-12 text-center margi_bott">
+                  <div class="Gallery_img">
+                      <h3>Live Creedence Cover Brasil</h3> <!-- Título adicionado -->
+                      <figure>
+                          <video controls>
+                              <source src="{{ url_for('static', filename='video/video_2.mp4') }}" type="video/mp4">
+                              Seu navegador não suporta a tag de vídeo.
+                          </video>
+                      </figure>
+                  </div>
               </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margi_bott text-center">
-              <div class="Gallery_img">
-                <figure>
-                  <img src="{{ url_for('static', filename='images/foto1_ccr.png') }}" alt="#" />
-                </figure>
-              </div>
-              <div class="hover_box">
-                <ul class="icon_hu">
-                  <h3>Creedence Cover Brasil</h3>
-                  <li><a href="#"><img src="{{ url_for('static', filename='icon/h.png') }}" alt="#" /></a></li>
-                  <li><a href="#"><img src="{{ url_for('static', filename='icon/h.png') }}" alt="#" /></a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margi_bott1 text-center">
-              <div class="Gallery_img">
-                <figure>
-                  <img src="{{ url_for('static', filename='images/ccr.jpg') }}" alt="#" />
-                </figure>
-              </div>
-              <div class="hover_box">
-                <ul class="icon_hu">
-                  <h3>Creedence Cover Brasil</h3>
-                  <li><a href="#"><img src="{{ url_for('static', filename='icon/h.png') }}" alt="#" /></a></li>
-                  <li><a href="#"><img src="{{ url_for('static', filename='icon/h.png') }}" alt="#" /></a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 text-center">
-              <div class="Gallery_img">
-                <figure>
-                  <img src="{{ url_for('static', filename='images/foto2_ccr.png') }}" alt="#" />
-                </figure>
-              </div>
-              <div class="hover_box">
-                <ul class="icon_hu">
-                  <h3>Creedence Cover Brasil</h3>
-                  <li><a href="#"><img src="{{ url_for('static', filename='icon/h.png') }}" alt="#" /></a></li>
-                  <li><a href="#"><img src="{{ url_for('static', filename='icon/h.png') }}" alt="#" /></a></li>              
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="Gallery_text text-center"> <!-- Centralizando o botão -->
-            <a href="https://www.youtube.com/watch?v=_TrYcXJZvyc" class="btn saiba-mais">Saiba Mais</a>
           </div>
         </div>
       </div>
-    </div>
   </div>
-  <!-- end Gallery -->
+</div>
 
-  <!-- footer -->
+
+
+<!-- end seção videos -->
+<!-- footer -->
   <footer>
     <div id="contact" class="footer">
         <div class="container">

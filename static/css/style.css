@@ -1420,6 +1420,96 @@ ul.icon_hu li {padding: 10px 3px; display: inline-block;}
 
 /** end Gallery **/
 
+/** video gallery **/
+
+.gallery_video {
+    padding: 40px 0;
+    background-color: #f9f9f9; /* Fundo claro para destacar a seção */
+}
+
+/* Estilo do título */
+.gallery_video .titlepage h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-weight: normal;
+    text-align: center;
+    color: rgb(8, 4, 4); /* Cor do texto alterada para branco */
+}
+
+
+/* Estilo para o vídeo */
+.gallery_video {
+    padding: 05px 0;
+    background-color: #f9f9f9; /* Fundo claro */
+    background-image: url('/static/images/palco.png'); /* Imagem de fundo */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+}
+
+.gallery_video .Gallery_img {
+    margin-bottom: 15px;
+}
+
+.gallery_video .Gallery_img figure {
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 1.0); /* Fundo branco com 80% de opacidade */
+    padding: 10px; /* Adiciona um pouco de padding */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+.gallery_video video {
+    width: 100%; /* Para que o vídeo ocupe toda a largura da coluna */
+    height: auto; /* Mantém a proporção do vídeo */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar destaque */
+}
+
+/* Estilo dos ícones e título do vídeo */
+.gallery_video .hover_box {
+    margin-top: 15px;
+}
+
+.gallery_video .hover_box h3 {
+    font-size: 20px;
+    color: #333; /* Cor do texto */
+    margin-bottom: 10px;
+}
+
+.gallery_video .icon_hu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza os ícones */
+}
+
+.gallery_video .icon_hu li {
+    margin: 0 10px; /* Espaçamento entre os ícones */
+}
+
+.gallery_video h3 {
+    font-size: 24px; /* Tamanho do título */
+    color: #050404; /* Cor do texto */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+    text-align: center; /* Centraliza o título */
+}
+
+/** end video galerry **/
+
+/* Botão "Saiba Mais" */
+.btn.saiba-mais {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Cor do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none;
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.btn.saiba-mais:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
 
 
 /** end make **/
