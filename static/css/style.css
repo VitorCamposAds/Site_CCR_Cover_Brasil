@@ -1266,18 +1266,6 @@ transition: all 0.3s ease-in;
     }
 }
 
-@media (max-width: 480px) {
-    .about .about-box h2 {
-        font-size: 8vw; /* Tamanho ainda menor para dispositivos muito pequenos */
-        font-family: 'Poppins', sans-serif; /* Adicionando a fonte Poppins */
-    }
-
-    .about .about-box p {
-        font-family: 'Poppins', sans-serif; /* Adicionando a fonte Poppins */
-        font-size: 12px; /* Tamanho da fonte ainda menor */
-    }
-}
-
 
 
 /** end about section **/
@@ -1332,11 +1320,13 @@ transition: all 0.3s ease-in;
 
 @media (max-width: 480px) {
     .box_text p {
+        font-family: 'Poppins', sans-serif;
         font-size: 14px; /* Tamanho ainda menor para dispositivos muito pequenos */
+        
     }
 
     .box_text a {
-        font-size: 14px; /* Tamanho ainda menor para o botão */
+        font-size: 14px; /* Tamanho ainda menor para o botão */       
     }
 }
 
@@ -1442,7 +1432,7 @@ ul.icon_hu li {padding: 10px 3px; display: inline-block;}
 .yellow {color: #200769; font-weight: bold;}
  .titlepage h2 {
      padding: 0;
-     color: #000;
+     color: #ffffff;
      line-height: 85px;
      font-size: 70px;
 }
