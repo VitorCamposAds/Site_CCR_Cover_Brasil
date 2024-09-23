@@ -38,7 +38,7 @@ def enviar_email():
     print(f"Nome: {nome}, Email: {email}, Telefone: {telefone}, Mensagem: {mensagem}")
 
     # Cria a mensagem
-    msg = Message(f'Mensagem de {nome}', recipients=['vitorbeatle@gmail.com'])
+    msg = Message(f'Mensagem de {nome}', recipients=['vitorbeatle@gmail.com', 'marcelo.dilla@hotmail.com', 'ruymontenegro@hotmail.com'])
     msg.body = f'Nome: {nome}\nEmail: {email}\nTelefone: {telefone}\nMensagem: {mensagem}\n\nEmail enviado do site CCR_Cover_Brasil.'
     
     # Envia o e-mail
