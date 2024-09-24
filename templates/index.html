@@ -289,7 +289,7 @@
           <div class="row justify-content-center">
               <div class="col-xl-12 text-center margi_bott">
                   <div class="Gallery_img">
-                      <h3>Vozes e Estórias: Creedence Cover Brasil</h3> <!-- Título adicionado -->
+                      <h3>Entrevistas</h3> <!-- Título adicionado -->
                       <figure>
                           <video controls>
                               <source src="{{ url_for('static', filename='video/video_1.mp4') }}" type="video/mp4">
@@ -302,7 +302,10 @@
                   <div class="Gallery_img">
                       <h3>Live Creedence Cover Brasil</h3> <!-- Título adicionado -->
                       <figure>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_TrYcXJZvyc" frameborder="0" allowfullscreen></iframe>
+                        <video controls>
+                          <source src="{{ url_for('static', filename='video/video_2.mp4') }}" type="video/mp4">
+                          Seu navegador não suporta a tag de vídeo.
+                        </video>                                         
                       </figure>
                   </div>
               </div>
