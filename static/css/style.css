@@ -1812,14 +1812,31 @@ text-align: center;}
     line-height: 1.6; /* Aumenta o espaçamento entre linhas para melhor legibilidade */
     margin: 15px;
     padding: 15px 0; /* Espaço acima e abaixo para o texto não encostar nas bordas */
-    min-height: 1500px; /* Altura mínima */
+    min-height: 500px; /* Altura mínima */
     position: relative; /* Para permitir que o overlay fique sobre o fundo */
-    background-color: rgba(240, 240, 240, 0.3); /* Fundo cinza claro com maior transparência (30%) */
     background-image: url(../images/ccr_capa1.jpg); /* Adiciona a imagem de fundo, centralizada */
-    background-repeat: no-repeat; /* Não repetir a imagem */
-    background-position: center; /* Centraliza a imagem */
-    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-repeat: repeat; /* Permite que a imagem se repita */
+    background-size: 200px auto; /* Tamanho da imagem de fundo (ajuste conforme necessário) */
     color: #444; /* Cor do texto */
+}
+
+/* Overlay para aumentar a transparência da imagem de fundo */
+.historia-body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(230, 211, 211, 0.7); /* Aumente a transparência para 70% */
+    pointer-events: none; /* Permite que eventos de clique passem pelo overlay */
+    z-index: 1; /* Coloca o overlay acima da imagem de fundo */
+}
+
+/* Ajustar o z-index do conteúdo */
+.historia-body > * {
+    position: relative; /* Para garantir que o conteúdo fique acima do overlay */
+    z-index: 2; /* Coloca o conteúdo acima do overlay */
 }
 
 /* Títulos */
@@ -1856,6 +1873,53 @@ text-align: center;}
     max-width: 900px; /* Aumentado para largura máxima do box */
     width: 90%; /* Largura adaptável ao tamanho da tela */
 }
+
+/* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+    .historia-h1 {
+        font-size: 2.2em; /* Diminui o tamanho do título em telas menores */
+    }
+    .historia-h2 {
+        font-size: 1.8em; /* Diminui o tamanho do subtítulo em telas menores */
+    }
+}
+
+@media (max-width: 992px) {
+    .historia-h1 {
+        font-size: 2em; /* Diminui ainda mais o tamanho do título */
+    }
+    .historia-h2 {
+        font-size: 1.6em; /* Diminui ainda mais o tamanho do subtítulo */
+    }
+    .historia-body {
+        margin: 10px; /* Reduz a margem em telas menores */
+    }
+}
+
+@media (max-width: 768px) {
+    .historia-body {
+        padding: 10px 0; /* Reduz o padding em telas menores */
+    }
+    .historia-h1 {
+        font-size: 1.8em; /* Tamanho do título em telas pequenas */
+    }
+    .historia-h2 {
+        font-size: 1.4em; /* Tamanho do subtítulo em telas pequenas */
+    }
+}
+
+@media (max-width: 576px) {
+    .historia-h1 {
+        font-size: 1.6em; /* Tamanho do título em telas muito pequenas */
+    }
+    .historia-h2 {
+        font-size: 1.2em; /* Tamanho do subtítulo em telas muito pequenas */
+    }
+    .historia-body {
+        min-height: 1000px; /* Altura mínima ajustada para telas pequenas */
+    }
+}
+
 
 
 
