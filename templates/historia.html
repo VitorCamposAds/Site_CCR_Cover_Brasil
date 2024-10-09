@@ -29,7 +29,6 @@
     
     <!-- Fancybox -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -130,5 +129,35 @@
         </div>
     </footer>
     <!-- end footer -->
+    <!-- end footer -->
+  <!-- Javascript files -->
+  <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.sticky-kit.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+  <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+
+
+  <script>
+    $(document).ready(function() {
+      $('#contactForm').on('submit', function(event) {
+        event.preventDefault(); // Impede o envio padrão do formulário
+
+        $.ajax({
+          type: 'POST',
+          url: '/enviar-email',
+          data: $(this).serialize(),
+          success: function(response) {
+            alert('Mensagem enviada com sucesso!');
+            $('#contactForm')[0].reset(); // Limpa o formulário
+          },
+          error: function() {
+            alert('Erro ao enviar a mensagem. Tente novamente.');
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
