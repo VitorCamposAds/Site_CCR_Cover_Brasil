@@ -20,6 +20,12 @@ handler = StreamHandler()
 handler.setLevel(logging.DEBUG)
 app.logger.addHandler(handler)
 
+@app.route('/historia')
+def historia():
+    print("Acessando a rota historia")
+    return render_template('historia.html')
+
+
 @app.route('/')
 def index():
     return render_template('index.html')  # Certifique-se de que index.html está na pasta templates

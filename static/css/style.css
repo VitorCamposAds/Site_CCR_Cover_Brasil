@@ -1806,6 +1806,57 @@ line-height: 60px;
 padding: 45px 0;
 text-align: center;}
 
+/* Estilos do texto para a história */
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8; /* Aumenta o espaçamento entre linhas para melhor legibilidade */
+    margin: 20px;
+    background-color: #fafafa; /* Cor de fundo suave para o corpo */
+    background-image: url(../images/ccr_capa1_rd.jpg); /* Adiciona a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    color: #444; /* Cor do texto mais suave para melhor contraste */
+}
+
+h1 {
+    color: #2c3e50; /* Cor mais escura para o título principal */
+    text-align: center; /* Centraliza o título principal */
+    font-size: 2.5em; /* Aumenta o tamanho do título principal */
+    margin-bottom: 20px; /* Espaçamento abaixo do título principal */
+}
+
+h2, h3 {
+    color: #000; /* Cor preta para os subtítulos */
+    text-align: center; /* Centraliza os subtítulos */
+    margin-bottom: 15px; /* Espaçamento abaixo dos subtítulos */
+}
+
+.resumo {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semi-transparente para contraste */
+    padding: 20px; /* Aumenta o preenchimento interno para mais espaço */
+    border-radius: 10px; /* Arredonda mais os cantos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra para profundidade */
+    margin-bottom: 30px; /* Aumenta a margem abaixo da seção resumo */
+}
+
+p {
+    margin: 10px 0; /* Adiciona margem entre os parágrafos */
+    font-size: 1.1em; /* Aumenta o tamanho da fonte dos parágrafos */
+    text-align: justify; /* Justifica o texto para melhor apresentação */
+}
+
+.texto-referencia {
+    text-align: center; /* Centraliza o texto de referência */
+    font-style: italic; /* Aplica itálico ao texto de referência */
+    color: #7f8c8d; /* Cor cinza suave para texto de referência */
+    margin-top: 10px; /* Margem acima do texto de referência */
+}
+
+/* fim html história */
+
+
+
 
 
 
