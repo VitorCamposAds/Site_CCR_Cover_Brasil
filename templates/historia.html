@@ -8,7 +8,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
-    
+
     <!-- favicon -->
     <link rel="icon" href="{{ url_for('static', filename='images/fevicon.png') }}" type="image/gif" />
     
@@ -29,29 +29,27 @@
     
     <!-- Fancybox -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
-    <title>História-Creedence</title>
+
+    <title>A História do Creedence</title>
 </head>
 <body>
-    <h1>A História Do Creedence</h1>
-    <div class="resumo">
-        <h2>Por Marcelo Dilla</h2>
-        <p>Em 1955, Tom Fogerty estava imerso na rotina da High School El Cerrito, quando seu irmão mais novo, John Fogerty, apenas quatro anos mais jovem, uniu-se a ele, junto com Stu Cook e Doug Clifford, também matriculados na mesma escola. Tom havia aprendido a tocar piano com sua mãe no início dos anos 50, coincidentemente quando emergia o icônico Rock 'n' Roll, com os primeiros grandes artistas, como Chuck Berry, Little Richard, Gene Vincent, Jerry Lee Lewis, Elvis Presley, entre outros. No entanto, tanto Tom quanto John nutriam a ambição de um dia constituírem uma banda de rock, haja vista que os riffs de guitarra de Chuck Berry cativavam de maneira inigualável o jovem John Fogerty.</p>
-
-        <p>Até 1958 o quarteto de amigos tocava com intuito deles se divertirem, conquanto visassem se tornar um conjunto reconhecido. Assim sendo, a concretização desse desejo de se tornarem de fato uma banda, ocorreu em 1959, isto é, no auge da adolescência dos quatro e concomitante ao ápice da "pulsação do rock" na América do Norte. Desta forma, já em 1961, o grupo formaliza-se com a alcunha de "Tommy Fogerty & Blue Velvets", cujo papel de vocalista principal fica a cargo de Tom Fogerty. Assim, logo na sequência, o conjunto começou a se apresentar em sua escola e em algumas bases militares na área de San Francisco.</p>
-        
-        <p>Ao atingirem a maioridade, John, Stu e Doug profissionalizaram-se, adotando o nome "The Golliwogs". Em 1964, lançaram seu primeiro álbum, repleto de composições originais, em um cenário musical dominado pela "invasão britânica". Apesar do relativo fracasso comercial do disco, um executivo da gravadora demonstrou particular apreço pelas composições de John Fogerty, cujo timbre vocal evocava o autêntico R&B estadunidense, um estilo eclipsado pela ascensão do rock britânico.</P>
-        
-        <p>Assim, no final de 1967, em uma reunião entre o quarteto e os dirigentes da gravadora, decidiu-se que a banda deveria adotar um novo nome e que John Fogerty seria o vocalista principal — função que já desempenhava como guitarrista. O curioso nome "Creedence Clearwater Revival" surgiu nesse contexto, sendo um conjunto de elementos significativos da trajetória do grupo. "Creedence" foi uma homenagem de John ao seu amigo "Credence Nuvall", que trabalhava com ele em um posto de gasolina. O termo "Clearwater" foi extraído de um refrão publicitário de uma cerveja californiana. Já o "Revival" atendia à demanda da gravadora por uma revitalização do R&B e do verdadeiro rock americano.</p>
-
-        <p>É importante ressaltar que o nome "Creedence", com dois "E", era inédito até então. Fogerty sugeriu a inclusão de "CREED" como uma expressão de crença de que tudo daria certo, como de fato ocorreu. Assim, em 1968, nasceu oficialmente uma das maiores e mais influentes bandas da história do rock.</p>
-    </div>
-
+    <div class="historia-body">
+        <h1 class="historia-h1">A História do Creedence</h1>
+        <div class="historia-resumo">
+            <h2 class="historia-h2">Por Marcelo Dilla</h2>
+            <p>Em 1955, Tom Fogerty estava imerso na rotina da High School El Cerrito, quando seu irmão mais novo, John Fogerty, apenas quatro anos mais jovem, uniu-se a ele, junto com Stu Cook e Doug Clifford, também matriculados na mesma escola. Tom havia aprendido a tocar piano com sua mãe no início dos anos 50, coincidentemente quando emergia o icônico Rock 'n' Roll, com os primeiros grandes artistas, como Chuck Berry, Little Richard, Gene Vincent, Jerry Lee Lewis, Elvis Presley, entre outros. No entanto, tanto Tom quanto John nutriam a ambição de um dia constituírem uma banda de rock, haja vista que os riffs de guitarra de Chuck Berry cativavam de maneira inigualável o jovem John Fogerty.</p>
+            <p>Até 1958, o quarteto de amigos tocava com intuito de se divertirem, conquanto visassem se tornar um conjunto reconhecido. Assim sendo, a concretização desse desejo de se tornarem de fato uma banda ocorreu em 1959, isto é, no auge da adolescência dos quatro e concomitante ao ápice da "pulsação do rock" na América do Norte. Desta forma, já em 1961, o grupo formaliza-se com a alcunha de "Tommy Fogerty & Blue Velvets", cujo papel de vocalista principal fica a cargo de Tom Fogerty. Assim, logo na sequência, o conjunto começou a se apresentar em sua escola e em algumas bases militares na área de San Francisco.</p>
+            <p>Ao atingirem a maioridade, John, Stu e Doug profissionalizaram-se, adotando o nome "The Golliwogs". Em 1964, lançaram seu primeiro álbum, repleto de composições originais, em um cenário musical dominado pela "invasão britânica". Apesar do relativo fracasso comercial do disco, um executivo da gravadora demonstrou particular apreço pelas composições de John Fogerty, cujo timbre vocal evocava o autêntico R&B estadunidense, um estilo eclipsado pela ascensão do rock britânico.</p>
+            <p>Assim, no final de 1967, em uma reunião entre o quarteto e os dirigentes da gravadora, decidiu-se que a banda deveria adotar um novo nome e que John Fogerty seria o vocalista principal — função que já desempenhava como guitarrista. O curioso nome "Creedence Clearwater Revival" surgiu nesse contexto, sendo um conjunto de elementos significativos da trajetória do grupo. "Creedence" foi uma homenagem de John ao seu amigo "Credence Nuvall", que trabalhava com ele em um posto de gasolina. O termo "Clearwater" foi extraído de um refrão publicitário de uma cerveja californiana. Já o "Revival" atendia à demanda da gravadora por uma revitalização do R&B e do verdadeiro rock americano.</p>
+            <p>É importante ressaltar que o nome "Creedence", com dois "E", era inédito até então. Fogerty sugeriu a inclusão de "CREED" como uma expressão de crença de que tudo daria certo, como de fato ocorreu. Assim, em 1968, nasceu oficialmente uma das maiores e mais influentes bandas da história do rock.</p>
+        </div>
+    </div>    
     <!-- footer -->
     <footer>
         <div id="contact" class="footer">
